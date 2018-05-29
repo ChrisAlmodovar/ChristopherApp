@@ -23,44 +23,127 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Christopher" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="drO-Jq-A7e">
-                                <rect key="frame" x="97" y="283" width="181" height="58"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="36"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="13995660_10201875753051354_5917402478565811087_o" translatesAutoresizingMaskIntoConstraints="NO" id="Raw-0Q-gq5">
-                                <rect key="frame" x="29" y="82" width="316" height="168"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="13995660_10201875753051354_5917402478565811087_o" translatesAutoresizingMaskIntoConstraints="NO" id="Raw-0Q-gq5">
+                                <rect key="frame" x="29" y="64" width="316" height="168"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vLU-86-mMe">
-                                <rect key="frame" x="94" y="409" width="187" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="23"/>
-                                <state key="normal" title="Favorite Subject"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fTj-7Q-Om5">
-                                <rect key="frame" x="105" y="463" width="165" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="23"/>
-                                <state key="normal" title="Favorite Sport"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A6p-ok-WUA">
-                                <rect key="frame" x="96" y="359" width="183" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A6p-ok-WUA">
+                                <rect key="frame" x="96" y="359" width="182" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="sH0-RR-K5k"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="23"/>
                                 <state key="normal" title="Favorite Music">
-                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <segue destination="MTb-kd-RMV" kind="show" id="3lf-Wg-wvc"/>
+                                </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vLU-86-mMe">
+                                <rect key="frame" x="94" y="409" width="186" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="TT3-Yx-dcn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="23"/>
+                                <state key="normal" title="Favorite Subject">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="PHa-QM-4l2" kind="show" id="zVh-Uu-mVO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fTj-7Q-Om5">
+                                <rect key="frame" x="105" y="463" width="164" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="1zv-Ei-p4c"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="23"/>
+                                <state key="normal" title="Favorite Sport">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="nx0-B3-WVW" kind="show" id="IzA-UW-2ws"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Christopher" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="drO-Jq-A7e">
+                                <rect key="frame" x="78" y="265" width="219" height="58"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="YQA-uJ-X8G"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="40"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="0.62186964897260277" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="drO-Jq-A7e" firstAttribute="top" secondItem="Raw-0Q-gq5" secondAttribute="bottom" constant="33" id="7Uw-4a-hla"/>
+                            <constraint firstItem="A6p-ok-WUA" firstAttribute="top" secondItem="drO-Jq-A7e" secondAttribute="bottom" constant="36" id="DZC-KT-VLn"/>
+                            <constraint firstItem="vLU-86-mMe" firstAttribute="top" secondItem="A6p-ok-WUA" secondAttribute="bottom" constant="20" id="FKI-vk-TIl"/>
+                            <constraint firstItem="A6p-ok-WUA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="96" id="PUM-Rl-Qm1"/>
+                            <constraint firstItem="Raw-0Q-gq5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SBj-cn-IqZ"/>
+                            <constraint firstItem="drO-Jq-A7e" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="78" id="bq2-ic-sSh"/>
+                            <constraint firstItem="A6p-ok-WUA" firstAttribute="centerX" secondItem="vLU-86-mMe" secondAttribute="centerX" id="cl0-7U-ew3"/>
+                            <constraint firstItem="vLU-86-mMe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="94" id="gF6-OD-0OW"/>
+                            <constraint firstItem="Raw-0Q-gq5" firstAttribute="centerX" secondItem="drO-Jq-A7e" secondAttribute="centerX" id="kXY-m3-1V9"/>
+                            <constraint firstItem="drO-Jq-A7e" firstAttribute="centerX" secondItem="A6p-ok-WUA" secondAttribute="centerX" id="lK1-xX-6aj"/>
+                            <constraint firstItem="Raw-0Q-gq5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="44" id="ltR-Zq-OP1"/>
+                            <constraint firstItem="Raw-0Q-gq5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="29" id="msn-lq-mlO"/>
+                            <constraint firstItem="fTj-7Q-Om5" firstAttribute="top" secondItem="vLU-86-mMe" secondAttribute="bottom" constant="24" id="sNI-1f-i02"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fTj-7Q-Om5" secondAttribute="bottom" constant="174" id="uir-dc-UGp"/>
+                            <constraint firstItem="fTj-7Q-Om5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="105" id="veQ-en-vEp"/>
+                            <constraint firstItem="vLU-86-mMe" firstAttribute="centerX" secondItem="fTj-7Q-Om5" secondAttribute="centerX" id="vhH-sZ-gQa"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="37.600000000000001" y="31.934032983508249"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Vtn-Ow-nHn">
+            <objects>
+                <viewController id="MTb-kd-RMV" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hJ5-kv-2bG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="0.56648651541095896" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="7Ms-Nj-qv9"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0V2-b6-Ph6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="742" y="36"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Zst-rI-qLf">
+            <objects>
+                <viewController id="PHa-QM-4l2" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3Vw-a2-mqd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="0.49574593321917809" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="FEc-ZR-Lgs"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oHs-7e-mSn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1477" y="43"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="gHl-x5-Kv7">
+            <objects>
+                <viewController id="nx0-B3-WVW" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LrA-sf-99u">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="W16-3G-hXO"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="clh-nI-UBa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2254" y="48"/>
         </scene>
     </scenes>
     <resources>
